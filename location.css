@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+}
+.tablet-map,
+.desktop-map {
+  display: none;
+}
+.mobile-map {
+  width: 100%;
+}
+.location-button {
+  /* font-family: cursive; */
+  width: 204px;
+  height: 72px;
+  background-color: #151515;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.64px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.icon {
+  width: 56px;
+  height: 72px;
+  background-color: #d5966c;
+  position: Relative;
+}
+.icon-arrow {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+.location {
+  background-color: aqua;
+
+  position: absolute;
+  top: 0;
+}
+
+.header-div {
+  position: Relative;
+}
+.button-location {
+  position: relative;
+}
+.article {
+  background-color: #151515;
+  height: 493px;
+
+  padding-left: 20px;
+  padding-top: 48px;
+}
+h1 {
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  /* padding-top: 48px; */
+}
+h2 {
+  color: #d5966c;
+  font-size: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  /* margin-bottom: 20px; */
+}
+
+.text {
+  /* width: 343px; */
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+
+  /* margin: 32px 16px; */
+}
+.address-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.footer {
+  display: Flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+
+  background: #d5966c;
+  padding: 60px 20px;
+}
+.footer-text {
+  width: 311px;
+  color: black;
+  font-size: 16px;
+
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 26px;
+}
+.social-media {
+  display: flex;
+  gap: 10px;
+  color: black;
+}
+/* .social-icon {
+  color: black;
+} */
+h2,
+h3 {
+  font-family: "Big shoulders display", cursive;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.social-img {
+  display: none;
+}
+.our-location {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Big shoulders display", cursive;
+  margin-bottom: 48px;
+}
+.social-icon {
+  color: black;
+}
+@media (min-width: 768px) {
+  .tablet-map {
+    display: block;
+    width: 100%;
+  }
+  .mobile-map {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .address {
+    width: 398px;
+  }
+  .article {
+    display: Flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 436px;
+  }
+}
+@media (min-width: 1400px) {
+  .desktop-map {
+    display: block;
+    width: 100%;
+  }
+  .tablet-map {
+    display: none;
+  }
+  .social-icon {
+    cursor: pointer;
+  }
+  /* .social-icon:active {
+    background-color: #f2f2f2;   ver vucvli  pers;
+  } */
+  /* zustad ver davsvi perebi/ */
+}
